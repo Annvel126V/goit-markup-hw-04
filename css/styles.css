@@ -80,6 +80,8 @@ body{
     margin-right: auto;
     display: block; 
     padding: 24px 0; 
+    position: relative;
+
      }
      .nav-menu:hover,
      .nav-menu:focus{
@@ -93,6 +95,7 @@ body{
      .address-list{
       display: flex;
       gap: 40px;
+      padding: 24px 0;
      }
     .nav-menu-address{
     display: flex; 
@@ -113,6 +116,8 @@ body{
     .caption{
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: url(../images/people-office.jpg);
+    background: rgba(46, 47, 66, 0.7);
     }
     .caption-tekst{
     font-weight: 700;
