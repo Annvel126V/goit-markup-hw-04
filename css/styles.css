@@ -25,6 +25,7 @@ body{
     .header-container{
      display: flex;
      align-items: center; 
+     
     }
     .navigetion{
      display: flex;
@@ -33,7 +34,7 @@ body{
     .header{
     color: #2e2f42;
     border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
+    
     }
     
     .header-logo{
@@ -83,8 +84,8 @@ body{
     display: block; 
     padding: 24px 0;
     position: relative;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
     }
    
   
@@ -97,7 +98,7 @@ body{
      .curent{
       position: relative;
       color: #404bbf;
-      
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
      }
      .curent::after{
       content: "";
@@ -115,11 +116,12 @@ body{
      .address{
      font-style: normal;
      margin-left: auto;
-    
+     
      }
      .address-list{
       display: flex;
       gap: 40px;
+
       
      }
     .nav-menu-address{
@@ -132,12 +134,13 @@ body{
     color: #434455;
     display: block; 
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav-menu-address:hover,
     .nav-menu-address:focus{
     color: #404bbf; 
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +155,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    max-width: 1440px;
     }
     
     .caption-tekst{
@@ -226,14 +229,25 @@ body{
       width: calc((100% - 72px) / 4);
       border-radius: 0px 0px 4px 4px;
     }
+    .container-svg{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 112px;
+      background-color: #f4f4fd;
+      border-radius: 4px;
+      border: 1px solid #8e8f99;
+      margin-bottom: 8px; 
+    }
     .svg{
-     padding: 24px 100px;
-     fill: none; 
-     border: 1px solid #8e8f99;
-     border-radius: 4px;
-     background: #f4f4fd;
-     width: 264px;
-     height: 112px;
+      padding: 24px 100px;
+      fill: none; 
+      border: 1px solid #8e8f99;
+      border-radius: 4px;
+      background: #f4f4fd;
+      width: 264px;
+      height: 112px;
+     
      
       
     }
@@ -285,6 +299,7 @@ body{
     height: auto;
     width: 100%;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
   
     
@@ -302,6 +317,20 @@ body{
     fill: #f4f4fd;
     }
    .team-icon-item:hover{
+    background-color: #404bbf;
+   }
+   .team-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   }
+   .team-link:hover,
+   .team-link:focus{
     background-color: #404bbf;
    }
    .icons-svg{
@@ -353,6 +382,7 @@ body{
     .li-portfolio{
       width: calc((100% - 48px) / 3);
       border-top: none;
+      
     }
     .li-portfolio:hover {
       box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -368,10 +398,7 @@ body{
     .overlay{
       font-family: "Roboto", sans-serif;
       text-align: justify;
-      padding-left: 32px;
-      padding-top: 40px;
-      padding-bottom: 164px;
-      padding-right: 32px;
+      padding: 40px 32px;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.5;
@@ -384,12 +411,13 @@ body{
       right: 0;
       position: absolute;
       transform: translateY(100%);  
-      transition: transform 250ms  ease-in-out;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
       }
       .portfolio-overlay{
         position: relative;
         overflow: hidden;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       .li-portfolio:hover .overlay{
         transform: translateY(0);
@@ -428,6 +456,7 @@ body{
     }
     .container-footer{
       display: flex;
+      align-items: baseline;
     }
     .footer-logo{
     font-family: "Raleway", sans-serif;   
@@ -500,11 +529,25 @@ body{
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #f4f4fd;
-    
-    
-  }
+    }
   .social-media-icon:hover{
     background-color: #31d0aa;
+   }
+   .social-link{
+    width: 100;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .social-link:hover,
+   .social-link:focus{
+    background-color: #31d0aa;
+   }
+   .icons-svg{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    .footer-box{
     margin-right: 120px;
