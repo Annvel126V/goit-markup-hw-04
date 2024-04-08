@@ -33,11 +33,11 @@ body{
     .header{
     color: #2e2f42;
     border-bottom: 1px solid #E7E9FC;
-    
-    
-    
-    
+   
     }
+    .header:hover {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
+  }
     .header-logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -83,11 +83,10 @@ body{
     font-size: 16px;
     line-height: 1.5;
     display: block; 
-    margin-bottom: 24px;
-    padding: 24px;
+    padding: 24px 0;
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
+    
     }
    
   
@@ -123,7 +122,7 @@ body{
      .address-list{
       display: flex;
       gap: 40px;
-      padding: 24px 0;
+      
      }
     .nav-menu-address{
     display: flex; 
