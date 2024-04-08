@@ -33,11 +33,9 @@ body{
     .header{
     color: #2e2f42;
     border-bottom: 1px solid #E7E9FC;
-   
-    }
-    .header:hover {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
-  }
+    }
+    
     .header-logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -443,7 +441,7 @@ body{
     color: #4d5ae5;
     display: inline-block;
     margin-bottom: 16px;
-    margin-left: 120px;
+    
     
     
     }
@@ -463,7 +461,7 @@ body{
     letter-spacing: 0.02em;
     color: #f4f4fd; 
     max-width: 264px;
-    margin-left: 120px;
+    
      }  
      .footer-flex{
       
